@@ -1,0 +1,322 @@
+html{
+    scroll-behavior: smooth;
+}
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 100px 0;
+    background-color: #2C3531;
+}
+
+.section_title{
+    margin-bottom: 30px;
+
+}
+
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: #D9B08C;
+    font-size: 30px;
+    transition: all.5s ease-in-out;
+}
+
+/* ############################# Header ###################################*/
+header{
+    background: #116466;
+    border-bottom: 1px solid #c1a2a2; 
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+.nav_links{
+    display: flex;
+}
+.nav_links li a{
+    margin-left: 15ppx;
+    color:  #d1e8e2;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all.5s ease-in-out;
+}
+
+.nav_links li a:hover{
+    background: #2C3531;
+}
+.logo h2 a{
+    color: #D9B08C;
+    text-transform: uppercase;
+} 
+/* ############################# ANASAYFA ###################################*/
+.innor_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto auto;
+    width: 80%;
+    color: white;
+}
+.child_anasayfa{
+    flex-basis: 45%;
+}
+.child_anasayfa h1{
+    font-size: 60px;
+    color: #116466;
+    margin-bottom: 4%;
+}
+.span_child{
+    font-size: 40px;
+    color: #D1E8E2;
+    margin-bottom: 10px;
+}
+.child_anasayfa p{
+    font-size: 30px;
+    color: #FFCB9A;
+    margin-bottom: 10px;
+}
+.btn
+{
+    background: #116466;
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solud #333333;
+    font-weight: 650;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all.3s ease;
+}
+.btn:hover{
+    background: transparent;
+}
+.btn a{
+    color: #D1E8E2;
+}
+/* ############################# Yazilimlar ###################################*/
+.Innersoftware{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: white;
+}
+.Innersoftware_child{
+
+    flex-basis: 30%;
+    color: #D1E8E2;
+    padding: 25px 20px;
+    background: rgba(66, 100, 143, 0.281);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all.5s ease-in;
+}
+.Innersoftware_child:hover{
+    border: 1px solid #24caac;
+}
+.Innersoftware_child .icon{
+    font-size: 25px;
+    color: #24caac;
+}
+.Innersoftware_child h3{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.Innersoftware_child p{
+    font-size: 15px;
+}
+/* ############################# Hakkımda ###################################*/
+.child_hakkimda{
+    flex-basis: 45%;
+}
+.child_hakkimda p{
+    font-size: 23px;
+    text-align: justify;
+    color: #D1E8E2;
+}
+.child_hakkimda a{
+    color: #D1E8E2;
+    text-decoration: underline;
+}
+.child_hakkimda h1{
+    margin-bottom: 5px;
+    color: #D9B08C;
+} 
+
+/* ############### İLETİŞİM ########################## */
+
+.body_iletisim {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  
+  @media (max-width: 600px) {
+    .social_ul {
+      transform: scale(0.6);
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 700px) {
+    .social_ul {
+      transform: scale(0.7);
+    }
+  }
+  
+  @media (min-width: 701px) and (max-width: 800px) {
+    .social_ul {
+      transform: scale(0.8);
+    }
+  }
+  
+  .social_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  .social_ul li {
+    margin: 0 40px;
+  }
+  
+  .social_ul li a .fa {
+    font-size: 40px;
+    color: #555;
+    line-height: 80px;
+    transition: 0.5s;
+  }
+  
+  .social_ul li a {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .social_ul li a::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b2b2b2;
+    transition: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+  
+  .social_ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #e5e5e5;
+    transition: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  .social_ul li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg)
+      translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .social_ul li:hover .fa {
+    color: #fff;
+  }
+  
+  .social_ul li:hover:nth-child(1) a {
+    background-color: #363434;
+  }
+  
+  .social_ul li:hover:nth-child(1) a::before {
+    background-color: #1f1e1e;
+  }
+  
+  .social_ul li:hover:nth-child(1) a::after {
+    background-color: #2c2b2b;
+  }
+  
+  .social_ul li:hover:nth-child(2) a {
+    background-color: #55acee;
+  }
+  
+  .social_ul li:hover:nth-child(2) a::before {
+    background-color: #4489be;
+  }
+  
+  .social_ul li:hover:nth-child(2) a::after {
+    background-color: #66b4ef;
+  }
+  
+  .social_ul li:hover:nth-child(3) a {
+    background-color: #dd4b39;
+  }
+  
+  .social_ul li:hover:nth-child(3) a::before {
+    background-color: #b03c2d;
+  }
+  
+  .social_ul li:hover:nth-child(3) a::after {
+    background-color: #e05d4c;
+  }
+  
+  .social_ul li:hover:nth-child(4) a {
+    background-color: #0077b5;
+  }
+  
+  .social_ul li:hover:nth-child(4) a::before {
+    background-color: #005f90;
+  }
+  
+  .social_ul li:hover:nth-child(4) a::after {
+    background-color: #1984bc;
+  }
+  
+  .social_ul li:hover:nth-child(5) a {
+    background-color: #e4405f;
+  }
+  
+  .social_ul li:hover:nth-child(5) a::before {
+    background-color: #b6334c;
+  }
+  
+  .social_ul li:hover:nth-child(5) a::after {
+    background-color: #e6536f;
+  }
